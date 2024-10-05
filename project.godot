@@ -1,0 +1,30 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="PNGTuber"
+config/description="Simple base program for PNG Tuber."
+run/main_scene="res://pngtuber.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout="res://default_bus.tres"
+driver/enable_input=true
+
+[display]
+
+window/size/viewport_width=540
+window/size/viewport_height=540
+window/size/resizable=false
+window/size/transparent=true
+window/per_pixel_transparency/allowed=true
