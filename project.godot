@@ -12,8 +12,8 @@ config_version=5
 
 config/name="PNGTuber"
 config/description="Simple base program for PNG Tuber."
-run/main_scene="res://pngtuber.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
+run/main_scene="uid://d26w2busg4rnr"
+config/features=PackedStringArray("4.4", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
 [audio]
@@ -21,10 +21,28 @@ config/icon="res://icon.svg"
 buses/default_bus_layout="res://default_bus.tres"
 driver/enable_input=true
 
+[autoload]
+
+Logs="*res://ui/Logs.tscn"
+
 [display]
 
-window/size/viewport_width=540
-window/size/viewport_height=540
+window/size/viewport_width=1024
+window/size/viewport_height=1024
+window/size/initial_position_type=0
+window/size/initial_position=Vector2i(700, 0)
 window/size/resizable=false
 window/size/transparent=true
 window/per_pixel_transparency/allowed=true
+
+[dotnet]
+
+project/assembly_name="PNGTuber"
+
+[editor_plugins]
+
+enabled=PackedStringArray()
+
+[network]
+
+limits/packet_peer_stream/max_buffer_po2=24
