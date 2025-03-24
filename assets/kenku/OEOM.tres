@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="StateDescription" load_steps=3 format=3 uid="uid://ck8vcbvrlyv5j"]
+
+[ext_resource type="Texture2D" uid="uid://bldjbgs3pidqs" path="res://assets/kenku/openmouth.png" id="1_dxfpo"]
+[ext_resource type="Script" uid="uid://bbweq6okde2up" path="res://states/StateDescription.cs" id="2_8niuc"]
+
+[resource]
+script = ExtResource("2_8niuc")
+_texture = ExtResource("1_dxfpo")
+_title = "OpenEyesOpenMouth"
+metadata/_custom_type_script = "uid://bbweq6okde2up"

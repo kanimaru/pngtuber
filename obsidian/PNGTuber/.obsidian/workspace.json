@@ -1,0 +1,198 @@
+{
+  "main": {
+    "id": "58aaf684d6b2f29f",
+    "type": "split",
+    "children": [
+      {
+        "id": "1fc8b8a8251b70a1",
+        "type": "tabs",
+        "dimension": 70.74869413813117,
+        "children": [
+          {
+            "id": "c1b7faafcfefe76f",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "FlowChart.canvas",
+                "viewState": {
+                  "x": 248.87259457166476,
+                  "y": 92.7878740685863,
+                  "zoom": -0.3333333333333333
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "FlowChart"
+            }
+          }
+        ]
+      },
+      {
+        "id": "765a042eb3e9b981",
+        "type": "tabs",
+        "dimension": 29.251305861868836,
+        "children": [
+          {
+            "id": "1e2e2660da271215",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3369c59cbf4746f6",
+    "type": "split",
+    "children": [
+      {
+        "id": "fde09dd8ba70abc6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1a556a627aecf69e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "3b9473460a932b1a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "8712b18b4aa86c46",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 233.5
+  },
+  "right": {
+    "id": "b3cef39c8b7f79e0",
+    "type": "split",
+    "children": [
+      {
+        "id": "23861af0af9ffd27",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8c700e1aace46e5f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "PNG Tube.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for PNG Tube"
+            }
+          },
+          {
+            "id": "048d3fe69855b153",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "PNG Tube.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from PNG Tube"
+            }
+          },
+          {
+            "id": "6b4c9121a7cd4e51",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "1e8b2fdea552675a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "PNG Tube.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of PNG Tube"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "c1b7faafcfefe76f",
+  "lastOpenFiles": [
+    "FlowChart.canvas",
+    "PNG Tube.md",
+    "Welcome.md"
+  ]
+}

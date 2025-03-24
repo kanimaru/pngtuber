@@ -367,3 +367,5 @@ test:.cs
 # Godot 4+ specific ignores
 .godot/
 /android/
+/assets/panda
+/assets/tempti

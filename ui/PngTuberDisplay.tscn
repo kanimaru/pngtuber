@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=3 uid="uid://5ndvxix8swkp"]
+
+[ext_resource type="Script" uid="uid://fsa30lm0rrjp" path="res://ui/PngTuberDisplay.cs" id="1_mj1q4"]
+[ext_resource type="Resource" uid="uid://dclt04fc6ncbw" path="res://assets/panda/panda_png_tuber.tres" id="2_mj1q4"]
+[ext_resource type="Texture2D" uid="uid://bldjbgs3pidqs" path="res://assets/kenku/openmouth.png" id="3_ufrp2"]
+
+[sub_resource type="AudioStreamMicrophone" id="AudioStreamMicrophone_2bbjq"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_ufrp2"]
+viewport_path = NodePath("SpoutViewport")
+
+[node name="PngTuber" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mj1q4")
+SenderName = "Avatar"
+_pngTuberDescription = ExtResource("2_mj1q4")
+
+[node name="Input" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = SubResource("AudioStreamMicrophone_2bbjq")
+autoplay = true
+bus = &"MicInput"
+
+[node name="Preview" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("ViewportTexture_ufrp2")
+
+[node name="SpoutViewport" type="SpoutViewport" parent="."]
+unique_name_in_owner = true
+disable_3d = true
+transparent_bg = true
+render_target_update_mode = 4
+
+[node name="Avatar" type="TextureRect" parent="SpoutViewport"]
+unique_name_in_owner = true
+offset_right = 512.0
+offset_bottom = 512.0
+texture = ExtResource("3_ufrp2")
+expand_mode = 3
+stretch_mode = 5

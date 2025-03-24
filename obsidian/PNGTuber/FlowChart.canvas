@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		{"id":"39194b2fc7dca897","x":-100,"y":-298,"width":250,"height":136,"type":"text","text":"Opens Server\n- Password?"},
+		{"id":"9a97411fef0eae06","x":-440,"y":210,"width":250,"height":60,"type":"text","text":"Artist"},
+		{"id":"4d8130ed2e80f189","x":-100,"y":150,"width":250,"height":29,"type":"text","text":"Avatar Selection"},
+		{"id":"d8358f16751b754e","x":300,"y":150,"width":250,"height":60,"type":"text","text":"Connects to Server"},
+		{"id":"ec46faca2d7861bf","x":-100,"y":310,"width":250,"height":100,"type":"text","text":"Avatar Management\n- Add / Edit State"},
+		{"id":"f50aad73617160e2","x":640,"y":100,"width":250,"height":160,"type":"text","text":"- Change States\n- Move / Scale Around"},
+		{"id":"67f3f66b6ef197d3","x":300,"y":-336,"width":250,"height":212,"type":"text","text":"**Open Server**\nConfig\n- Restrict Movements\n- See / Kick connected Users"},
+		{"id":"8e3735191cdd1640","x":-440,"y":-298,"width":250,"height":136,"type":"text","text":"Streamer\n- Should see its Address"}
+	],
+	"edges":[
+		{"id":"15922c3b5322898d","fromNode":"8e3735191cdd1640","fromSide":"right","toNode":"39194b2fc7dca897","toSide":"left"},
+		{"id":"0105be2412f031c3","fromNode":"39194b2fc7dca897","fromSide":"right","toNode":"67f3f66b6ef197d3","toSide":"left"},
+		{"id":"01192bf6efbbb5f8","fromNode":"9a97411fef0eae06","fromSide":"right","toNode":"4d8130ed2e80f189","toSide":"left"},
+		{"id":"04c7b2ab26cfc98a","fromNode":"4d8130ed2e80f189","fromSide":"right","toNode":"d8358f16751b754e","toSide":"left"},
+		{"id":"1e4f8c346b1ba9fb","fromNode":"9a97411fef0eae06","fromSide":"right","toNode":"ec46faca2d7861bf","toSide":"left"},
+		{"id":"e2cbdfeec0fd159b","fromNode":"d8358f16751b754e","fromSide":"right","toNode":"f50aad73617160e2","toSide":"left"}
+	]
+}

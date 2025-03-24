@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://liyhn6gy6u6i"]
+
+[ext_resource type="Script" uid="uid://b1ppilrg07ul0" path="res://Bootstrap.cs" id="1_heto7"]
+[ext_resource type="PackedScene" uid="uid://yd75me2dff7" path="res://network/network.tscn" id="1_tp0nq"]
+[ext_resource type="PackedScene" uid="uid://d26w2busg4rnr" path="res://main_scene.tscn" id="2_65q2k"]
+
+[node name="Bootstrap" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_heto7")
+_onlineScene = ExtResource("2_65q2k")
+
+[node name="SelectRole" parent="." instance=ExtResource("1_tp0nq")]
+unique_name_in_owner = true
+layout_mode = 1

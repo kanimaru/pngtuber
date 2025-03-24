@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="StateDescription" load_steps=3 format=3 uid="uid://dp76tmg6wpqys"]
+
+[ext_resource type="Texture2D" uid="uid://ce7lql1jo4cq0" path="res://assets/kenku/openblink.png" id="1_fvjab"]
+[ext_resource type="Script" uid="uid://bbweq6okde2up" path="res://states/StateDescription.cs" id="2_nsekt"]
+
+[resource]
+script = ExtResource("2_nsekt")
+_texture = ExtResource("1_fvjab")
+_title = "ClosedEyesOpenMouth"
+metadata/_custom_type_script = "uid://bbweq6okde2up"

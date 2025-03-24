@@ -1,0 +1,13 @@
+<Project Sdk="Godot.NET.Sdk/4.4.0">
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <EnableDynamicLoading>true</EnableDynamicLoading>
+        <Nullable>enable</Nullable>
+        <LangVersion>12</LangVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\BlackHaul\BlackHaul.Generator\BlackHaul.Generator.csproj" PrivateAssets="true" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+        <AdditionalFiles Include="**\*.tres" />
+        <AdditionalFiles Include="**\*.tscn" />
+    </ItemGroup>
+</Project>

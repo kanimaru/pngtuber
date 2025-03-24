@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="PngTuberDescription" load_steps=7 format=3 uid="uid://6tmj0drkgnbm"]
+
+[ext_resource type="Script" uid="uid://bbweq6okde2up" path="res://states/StateDescription.cs" id="1_kcmjl"]
+[ext_resource type="Script" uid="uid://ccml2k0ckxrfy" path="res://states/PngTuberDescription.cs" id="2_0iiwk"]
+[ext_resource type="Resource" uid="uid://ck8vcbvrlyv5j" path="res://assets/kenku/OEOM.tres" id="2_707o6"]
+[ext_resource type="Resource" uid="uid://bst5i82g8f1ux" path="res://assets/kenku/OECM.tres" id="3_qx4cc"]
+[ext_resource type="Resource" uid="uid://dp76tmg6wpqys" path="res://assets/kenku/CEOM.tres" id="4_rlnia"]
+[ext_resource type="Resource" uid="uid://b22y6igfw10y8" path="res://assets/kenku/CECM.tres" id="5_babut"]
+
+[resource]
+script = ExtResource("2_0iiwk")
+Title = "Kenku"
+CloseTime = 1.0
+BlinkTimeout = 1.0
+SpeakThreshold = 0.1
+BlinkingMinFrequency = 6000.0
+BlinkingMaxFrequency = 8000.0
+_states = Array[ExtResource("1_kcmjl")]([ExtResource("2_707o6"), ExtResource("3_qx4cc"), ExtResource("4_rlnia"), ExtResource("5_babut")])
+metadata/_custom_type_script = "uid://ccml2k0ckxrfy"

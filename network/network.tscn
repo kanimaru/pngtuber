@@ -1,0 +1,83 @@
+[gd_scene load_steps=4 format=3 uid="uid://yd75me2dff7"]
+
+[ext_resource type="Script" uid="uid://dd5o2veww6k10" path="res://network/Network.cs" id="1_xcdrc"]
+[ext_resource type="Script" uid="uid://hm5c2vc2qup2" path="res://network/Server.cs" id="2_hcaol"]
+[ext_resource type="Script" uid="uid://dy3fe5ejboxtk" path="res://network/Client.cs" id="3_0t1jb"]
+
+[node name="Network" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xcdrc")
+
+[node name="ChooseNetwork" type="VBoxContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ChooseClient" type="Button" parent="ChooseNetwork"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Client"
+
+[node name="ChooseServer" type="Button" parent="ChooseNetwork"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Server"
+
+[node name="ClientSetting" type="GridContainer" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+columns = 2
+
+[node name="AddressLabel" type="Label" parent="ClientSetting"]
+layout_mode = 2
+text = "Address:"
+
+[node name="Address" type="LineEdit" parent="ClientSetting"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "127.0.0.1:23456"
+placeholder_text = "127.0.0.1"
+
+[node name="Connect" type="Button" parent="ClientSetting"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Connect"
+
+[node name="Disconnect" type="Button" parent="ClientSetting"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Disconnect"
+
+[node name="ServerSetting" type="GridContainer" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PortLabel" type="Label" parent="ServerSetting"]
+layout_mode = 2
+text = "Port:"
+
+[node name="Port" type="LineEdit" parent="ServerSetting"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "23456"
+
+[node name="Listen" type="Button" parent="ServerSetting"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Start Server"
+
+[node name="Server" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("2_hcaol")
+
+[node name="Client" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("3_0t1jb")

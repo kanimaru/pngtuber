@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="StateDescription" load_steps=3 format=3 uid="uid://bst5i82g8f1ux"]
+
+[ext_resource type="Texture2D" uid="uid://fermfsr5reb" path="res://assets/kenku/closedmouth.png" id="1_kmnaj"]
+[ext_resource type="Script" uid="uid://bbweq6okde2up" path="res://states/StateDescription.cs" id="2_pj1jj"]
+
+[resource]
+script = ExtResource("2_pj1jj")
+_texture = ExtResource("1_kmnaj")
+_title = "OpenEyesClosedMouth"
+metadata/_custom_type_script = "uid://bbweq6okde2up"

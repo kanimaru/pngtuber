@@ -1,0 +1,134 @@
+[gd_scene load_steps=3 format=3 uid="uid://d26w2busg4rnr"]
+
+[ext_resource type="PackedScene" uid="uid://5ndvxix8swkp" path="res://ui/PngTuberDisplay.tscn" id="1_0f027"]
+[ext_resource type="Script" uid="uid://b5jvq1t4jlxsi" path="res://states/StateManager.cs" id="2_2c62f"]
+
+[node name="MainScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PngTuber" parent="." instance=ExtResource("1_0f027")]
+unique_name_in_owner = true
+layout_mode = 1
+
+[node name="StateManager" type="ScrollContainer" parent="."]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 2
+script = ExtResource("2_2c62f")
+
+[node name="PanelContainer" type="PanelContainer" parent="StateManager"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Base" type="MarginContainer" parent="StateManager/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="StateContainer" type="VBoxContainer" parent="StateManager/PanelContainer/Base"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="GridContainer" type="GridContainer" parent="StateManager/PanelContainer/Base/StateContainer"]
+layout_mode = 2
+columns = 2
+
+[node name="Label" type="Label" parent="StateManager/PanelContainer/Base/StateContainer/GridContainer"]
+layout_mode = 2
+text = "Name"
+
+[node name="Name" type="LineEdit" parent="StateManager/PanelContainer/Base/StateContainer/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="CloseTimeLabel" type="Label" parent="StateManager/PanelContainer/Base/StateContainer/GridContainer"]
+layout_mode = 2
+text = "Close Time"
+
+[node name="CloseTime" type="LineEdit" parent="StateManager/PanelContainer/Base/StateContainer/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "1.0"
+alignment = 2
+virtual_keyboard_type = 3
+
+[node name="BlinkTimeoutLabel" type="Label" parent="StateManager/PanelContainer/Base/StateContainer/GridContainer"]
+layout_mode = 2
+text = "Blink Timeout"
+
+[node name="BlinkTimeout" type="LineEdit" parent="StateManager/PanelContainer/Base/StateContainer/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "0.2"
+alignment = 2
+virtual_keyboard_type = 3
+
+[node name="SpeakThreshouldLabel" type="Label" parent="StateManager/PanelContainer/Base/StateContainer/GridContainer"]
+layout_mode = 2
+text = "Speak Threshould"
+
+[node name="SpeakThreshould" type="LineEdit" parent="StateManager/PanelContainer/Base/StateContainer/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "0.05"
+alignment = 2
+virtual_keyboard_type = 3
+
+[node name="BlinkingMinFreqLabel" type="Label" parent="StateManager/PanelContainer/Base/StateContainer/GridContainer"]
+layout_mode = 2
+text = "Blinking Min Frequency"
+
+[node name="BlinkingMinFreq" type="LineEdit" parent="StateManager/PanelContainer/Base/StateContainer/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "6000"
+alignment = 2
+virtual_keyboard_type = 2
+
+[node name="BlinkingMaxFreqLabel" type="Label" parent="StateManager/PanelContainer/Base/StateContainer/GridContainer"]
+layout_mode = 2
+text = "Blinking Max Frequency"
+
+[node name="BlinkingMaxFreq" type="LineEdit" parent="StateManager/PanelContainer/Base/StateContainer/GridContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "8000"
+alignment = 2
+virtual_keyboard_type = 2
+
+[node name="AddState" type="Button" parent="StateManager/PanelContainer/Base/StateContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Add State"
+
+[node name="MenuBar" type="MenuBar" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+prefer_global_menu = false
+
+[node name="Change Avatar" type="MenuButton" parent="MenuBar"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Change Avatar"

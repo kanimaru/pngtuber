@@ -1,0 +1,27 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PNGTuber", "PNGTuber.csproj", "{19852E64-B9D9-4AA0-B6B0-A6B017F48144}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackHaul.Generator", "..\BlackHaul\BlackHaul.Generator\BlackHaul.Generator.csproj", "{BC26E1E1-FA2F-432A-A42D-3BCF07C60DE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19852E64-B9D9-4AA0-B6B0-A6B017F48144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19852E64-B9D9-4AA0-B6B0-A6B017F48144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19852E64-B9D9-4AA0-B6B0-A6B017F48144}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{19852E64-B9D9-4AA0-B6B0-A6B017F48144}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{19852E64-B9D9-4AA0-B6B0-A6B017F48144}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{19852E64-B9D9-4AA0-B6B0-A6B017F48144}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+		{BC26E1E1-FA2F-432A-A42D-3BCF07C60DE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC26E1E1-FA2F-432A-A42D-3BCF07C60DE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC26E1E1-FA2F-432A-A42D-3BCF07C60DE7}.ExportDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC26E1E1-FA2F-432A-A42D-3BCF07C60DE7}.ExportDebug|Any CPU.Build.0 = Debug|Any CPU
+		{BC26E1E1-FA2F-432A-A42D-3BCF07C60DE7}.ExportRelease|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC26E1E1-FA2F-432A-A42D-3BCF07C60DE7}.ExportRelease|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal
